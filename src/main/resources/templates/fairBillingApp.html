@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fair Billing App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+    <script language="JavaScript">
+        function myFunction() {
+          alert(this.filePath.value);
+          return false;
+        }
+    </script>
+</head>
+<body>
+
+<form action="/fairBillingApp" onsubmit="myFunction()">
+    <label for="filePath">File Path : </label><br>
+    <input type="text" id="filePath" name="filePath" value="C:\Users\TALA0219\Desktop\test.log"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<h2>Input Data</h2>
+
+<table>
+    <tr>
+        <th>Timestamp</th>
+        <th>Name</th>
+        <th>Event</th>
+    </tr>
+</table>
+<br>
+<br>
+<h2>Session Data</h2>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Session Count</th>
+        <th>Total Time</th>
+    </tr>
+</table>
+</body>
+</html>
